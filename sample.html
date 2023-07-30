@@ -2,11 +2,19 @@
 <html>
 <head>
   <title>カレンダーアプリ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="./UltraDate.js-2.2.2/dist/UltraDate.js"></script>
+  <script src="./UltraDate.js-2.2.2/dist/UltraDate.ja.js"></script>
 </head>
 <body>
-  <div id="calendar"></div> 
-  <!-- この下にscriptを書かなかったらカレンダーが表示されない。 -->
-  <script src="sample.js"></script>
+  <div class="container">
+    <div id ="buttons">
+      <button id="prev" type="button">前の月</button>
+      <button id="next" type="button">次の月</button>
+    </div>
+    <div id="calendar"></div> 
+    <script src="sample.js"></script>
+  </div>
 </body>
 </html>

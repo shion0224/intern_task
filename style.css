@@ -1,17 +1,44 @@
+/* デフォルトスタイル */
+html {
+  overflow-y:scroll;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 800px;
+}
+
 h1 {
-  font-size: 18px;
+  font-size: 25px;
+  text-align: center;
 }
 
 table {
+  width: 100%;
+  height: 90%;
   border-spacing: 0;
   border-collapse: collapse;
 }
 
+section {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 td {
+  width: 100px;
+  height: 80px;
   border: 1px solid #ddd;
   padding: 5px;
+  font-size: 13px;
   text-align: center;
+  vertical-align: text-top;
 }
+
+
 
 td:first-child {
   color: red;
@@ -20,3 +47,67 @@ td:first-child {
 td:last-child {
   color: royalblue;
 }
+
+td.syukuzitsu {
+  color: red;
+}
+
+td.is-disabled {
+  color: #ccc;
+}
+
+#buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#prev {
+  margin-right: auto;
+}
+
+#next {
+  text-align: right;
+}
+
+td#td1:hover,#td2:hover,#td3:hover,#td4:hover,#td5:hover,#td6:hover,#td7:hover,#td8:hover,#td9:hover,#td10:hover,#td11:hover,#td12:hover,#td13:hover,#td14:hover,#td15:hover,#td16:hover,#td17:hover,#td18:hover,#td19:hover,#td20:hover,#td21:hover,#td22:hover,#td23:hover,#td24:hover,#td25:hover,#td26:hover,#td27:hover,#td28:hover,#td29:hover,#td30:hover,#td31:hover {
+  background-color: rgba(38, 208, 255, 0.914);
+  transition: 0.3s ;
+}
+
+td#dis-td1:hover,td#dis-td2:hover,td#dis-td3:hover,td#dis-td4:hover,td#dis-td5:hover,td#dis-td6:hover,td#dis-td7:hover,td#dis-td8:hover,td#dis-td9:hover,td#dis-td10:hover,td#dis-td11:hover,td#dis-td12:hover,td#dis-td13:hover,td#dis-td14:hover,td#dis-td15:hover,td#dis-td16:hover,td#dis-td17:hover,td#dis-td18:hover,td#dis-td19:hover,td#dis-td20:hover,td#dis-td21:hover,td#dis-td22:hover,td#dis-td23:hover,td#dis-td24:hover,td#dis-td25:hover,td#dis-td26:hover,td#dis-td27:hover,td#dis-td28:hover,td#dis-td29:hover,td#dis-td30:hover,td#dis-td31:hover{
+  background-color: rgba(38, 208, 255, 0.914);
+  transition: 0.3s ;
+}
+
+.enhance{
+  background-color: rgba(38, 208, 255, 0.372);
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 300px;
+    height: 70%;
+  }
+  section {
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table {
+    width: 100%;
+    height: 60%;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  td {
+    width: 50px;
+    height: 40px;
+    font-size: 3px;
+    }
+}
+
+  
